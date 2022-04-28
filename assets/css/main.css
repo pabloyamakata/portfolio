@@ -1729,7 +1729,15 @@ input, select, textarea {
 }
 
 .second-card::before {
-	background: linear-gradient(to bottom, rgba(2, 1, 94, .5), rgb(22, 0, 39));
+	background: linear-gradient(to bottom, rgba(20, 20, 20, .5), rgba(1, 0, 41, 0.8));
+}
+
+.third-card::before {
+	background: linear-gradient(to bottom, rgba(2, 1, 94, .5), rgba(22, 0, 39, 1));
+}
+
+.fourth-card::before {
+	background: linear-gradient(to bottom, rgba(201, 152, 48, .1), rgba(146, 92, 41, 1));
 }
 
 .card:hover::before {
@@ -1772,18 +1780,29 @@ input, select, textarea {
 }
 
 .card .info .btn {
+	display: inline-block;
+	text-align: center;
 	text-decoration: none;
 	padding: .5rem 1rem;
 	background-color: #fff;
 	color: #000;
 	font-size: 14px;
 	font-weight: bold;
+	border-radius: 4px;
 	cursor: pointer;
-	transition: .4s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.card .info .btn:nth-child(4) {
+	margin-left: 4px;
 }
 
 .card .info .btn:hover {
-	box-shadow: 0 7px 10px rgba(0, 0, 0, .5);
+	transform: scale(1.06);
+}
+
+.card .info .btn:active {
+	background-color: rgba(247, 180, 121, .93);
 }
 
 @media all and (max-width: 620px) {
