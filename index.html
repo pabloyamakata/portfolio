@@ -23,11 +23,12 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<!-- <span class="icon fa-gem"></span> This was the original icon. -->
+							<i id="laptop-icon" class="fas fa-laptop-code"></i>
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>I'm Pablo Yamakata</h1>
+								<h1 class="header-name">I'm Pablo Yamakata</h1>
 								<p>Full Stack Developer</p>
 							</div>
 						</div>
@@ -47,17 +48,27 @@
 
 						<!-- About -->
 						<article id="about">
-							<h2 class="major">About</h2>
+							<h2 class="major">About Me</h2>
 							<span class="image main"><img src="images/about.jpg" alt="Stacked stones" /></span>
-							<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							<p>Check out my <a href="#skills">skills</a>.</p>
+							<h2 class="about-greeting">Hi everyone! My name's Pablo.</h2>
+							<p>I'm a passionate self-taught Full Stack Web Developer based in Buenos Aires, who loves solving code issues and embarking upon new projects. In 2020, I got my bachelor's degree in Business Administration and started my journey into the world of web applications and software solutions.</p>
+							<p>Language learning is a very interesting topic for me as well. I have an advanced level of English both spoken and written and, recently, I've been studying some basic japanese. Hopefully, I'll become a polyglot in the next few years.</p>
+							<p>One of my dreams is to master all the backend technologies and become an internationally recognized top-notch programmer. For the moment, I mainly code in PHP and TypeScript together with React library but, you can check out my other skills by going forward to the next section.</p>
+							<!-- Next button -->
+							<div class="btn-wrapper-about">
+								<a href="#skills">
+									<button>
+										<span>Next</span>
+										<i class="fas fa-angle-right"></i>
+									</button>
+								</a>
+							</div>
 						</article>
 
 						<!-- Skills -->
 							<article id="skills">
 								<h2 class="major">Skills</h2>
 								<span class="image main"><img src="images/skills.jpg" alt="Laptop and elephant doll" /></span>
-								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil error sequi, assumenda, aperiam corrupti qui perspiciatis eos vel voluptates facere quas nam atque optio aut consequuntur odio nulla omnis at aliquam aliquid autem saepe eum. Cum consectetur assumenda quis. Repudiandae incidunt expedita, dolores officia voluptate ad sunt eum impedit perspiciatis.</p>
 								<h3>Languages</h3>
 								<ul class="skill-list">
 									<li>
@@ -119,8 +130,23 @@
 										</svg>	
 									</li>
 								</ul>
-								<p>Other technologies and tools I have worked with are React Router, Formik, Yup, DayJS, ChartJS, ScrollReveal, Axios, Fetch API, JSON and the BEM Methodology.</p>
-								<p>By the way, check out my <a href="#projects">awesome work</a>!</p>
+								<p>Other technologies and tools I have worked with are React Router, Formik, Yup, DayJS, ChartJS, ScrollReveal, Axios, Fetch API, JSON and BEM.</p>
+								<p>My next goal is to learn Laravel and Redux to build a chat application. Furthermore, I'm taking a WordPress course at university.</p>
+								<!-- Back and next button -->
+								<div class="btn-wrapper-skills">
+									<a href="#about">
+										<button>
+											<i class="fas fa-angle-left"></i>
+											<span>Back</span>
+										</button>
+									</a>
+									<a href="#projects">
+										<button>
+											<span>Next</span>
+											<i class="fas fa-angle-right"></i>
+										</button>
+									</a>
+								</div>
 							</article>
 
 						<!-- Projects -->
@@ -169,6 +195,21 @@
 										</div>
 									</div>
 								</div>
+								<!-- Back and next button -->
+								<div class="btn-wrapper-projects">
+									<a href="#skills">
+										<button>
+											<i class="fas fa-angle-left"></i>
+											<span>Back</span>
+										</button>
+									</a>
+									<a href="#contact">
+										<button>
+											<span>Next</span>
+											<i class="fas fa-angle-right"></i>
+										</button>
+									</a>
+								</div>
 							</article>
 
 						<!-- Contact -->
@@ -195,10 +236,19 @@
 										<li><input type="reset" value="Reset"/></li>
 									</ul>
 								</form>
-								<ul class="icons">
-									<li><a target="new" href="https://www.linkedin.com/in/pabloyamakata/" class="icon brands fab fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-									<li><a target="new" href="https://github.com/pabloyamakata" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+								<!-- Back button -->
+								<div class="btn-wrapper-contact">
+									<a href="#projects">
+										<button>
+											<i class="fas fa-angle-left"></i>
+											<span>Back</span>
+										</button>
+									</a>
+									<ul class="icons">
+										<li><a target="new" href="https://www.linkedin.com/in/pabloyamakata/" class="icon brands fab fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a target="new" href="https://github.com/pabloyamakata" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</div>
 							</article>
 
 						<!-- Elements -->

@@ -30,7 +30,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-#projects {
+#about, #skills, #projects, #contact {
 	padding-bottom: 40px !important;
 }
 
@@ -641,6 +641,60 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+		@media screen and (max-width: 360px) {
+			
+			#laptop-icon {
+				position: relative;
+				top: 4px;
+				font-size: 25px;
+			}
+		}
+
+		@media screen and (min-width: 361px) and (max-width: 480px) {
+			
+			#laptop-icon {
+				position: relative;
+				top: 4px;
+				font-size: 30px;
+			}
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 736px) {
+			
+			#laptop-icon {
+				position: relative;
+				top: 5px;
+				font-size: 30px;
+			}
+		}
+
+		@media screen and (min-width: 737px) and (max-width: 980px) {
+			
+			#laptop-icon {
+				position: relative;
+				top: 7px;
+				font-size: 40px;
+			}
+		}
+
+		@media screen and (min-width: 981px) and (max-width: 1280px) {
+			
+			#laptop-icon {
+				position: relative;
+				top: 7px;
+				font-size: 40px;
+			}
+		}
+
+		@media screen and (min-width: 1281px) and (max-width: 1680px) {
+			
+			#laptop-icon {
+				position: relative;
+				top: 7px;
+				font-size: 40px;
+			}
+		}
+
 /* Image */
 
 	.image {
@@ -904,6 +958,7 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
+		margin-bottom: 0;
 		padding-left: 0;
 		text-align: right;
 	}
@@ -1445,6 +1500,10 @@ input, select, textarea {
 				opacity: 0;
 			}
 
+		.header-name {
+			letter-spacing: 5px;
+		}
+
 		@media screen and (max-width: 980px) {
 
 			#header .content p br {
@@ -1647,6 +1706,11 @@ input, select, textarea {
 
 		}
 
+	.about-greeting {
+		text-transform: none;
+		letter-spacing: 3px;
+	}
+
 /* Footer */
 
 	#footer {
@@ -1816,4 +1880,42 @@ input, select, textarea {
 	.card:not(:first-child) {
 		margin-top: 30px;
 	}
+}
+
+/* Back and next buttons */
+
+.btn-wrapper-about {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.btn-wrapper-about a {
+	border-bottom: none;
+}
+
+.btn-wrapper-skills,
+.btn-wrapper-projects {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-wrapper-projects {
+	padding-top: 40px;
+}
+
+.btn-wrapper-skills a,
+.btn-wrapper-projects a {
+	border-bottom: none;
+}
+
+.btn-wrapper-contact {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-wrapper-contact a {
+	border-bottom: none;
 }
