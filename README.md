@@ -1,6 +1,6 @@
 # My Web Portfolio
 
-Personal website where I show my projects. Click [here](https://pabloyamakata.github.io/portfolio/) to see it!
+Personal website where I showcase my projects. Click [here](https://pabloyamakata.github.io/portfolio/) to see it!
 
 ---
 
