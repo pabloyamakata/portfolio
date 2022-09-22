@@ -16,6 +16,11 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!-- Favicon -->
 		<link rel="icon" href="images/favicon.ico">
+		<!-- EmailJS -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+  			emailjs.init('qdMYPF3nuy4aT_Y2X');
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -216,25 +221,25 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form action="https://formsubmit.co/pablo.yamakata@gmail.com" method="POST">
+								<form id="form">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" required />
+											<label for="from_name">Name</label>
+											<input type="text" name="from_name" id="from_name" required />
 										</div>
 										<div class="field half">
-											<label for="email">Email</label>
-											<input type="email" name="email" id="email" required />
+											<label for="email_id">Email</label>
+											<input type="email" name="email_id" id="email_id" required />
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="4" required></textarea>
 										</div>
 									</div>
-									<input type="hidden" name="_subject" value="Email to Pablo Yamakata">
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset"/></li>
+										<li><input type="submit" id="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" id="reset" value="Reset"/></li>
+										<span id="success-message">Message was sent successfully!</span>
 									</ul>
 								</form>
 								<!-- Back button -->
@@ -520,6 +525,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/email.js"></script>
 
 	</body>
 </html>
