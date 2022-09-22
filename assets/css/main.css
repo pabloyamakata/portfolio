@@ -1923,3 +1923,10 @@ input, select, textarea {
 .btn-wrapper-contact a {
 	border-bottom: none;
 }
+
+#success-message {
+	display: none;
+	color: #33FF33;
+	margin-left: 12px;
+	padding-top: 9px;
+}
